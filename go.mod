@@ -3,7 +3,7 @@ module grpc-streaming
 go 1.22.0
 
 require (
-	github.com/hencsat46/protos-streaming v0.0.0-20240219175647-e0a1d13e5b6a
+	github.com/hencsat46/protos-streaming v0.0.2
 	google.golang.org/grpc v1.61.1
 )
 

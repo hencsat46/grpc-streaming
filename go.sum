@@ -4,8 +4,8 @@ github.com/golang/protobuf v1.5.3/go.mod h1:XVQd3VNwM+JqD3oG2Ue2ip4fOMUkwXdXDdiu
 github.com/google/go-cmp v0.5.5/go.mod h1:v8dTdLbMG2kIc/vJvl+f65V22dbkXbowE6jgT/gNBxE=
 github.com/google/go-cmp v0.6.0 h1:ofyhxvXcZhMsU5ulbFiLKl/XBFqE1GSq7atu8tAmTRI=
 github.com/google/go-cmp v0.6.0/go.mod h1:17dUlkBOakJ0+DkrSSNjCkIjxS6bF9zb3elmeNGIjoY=
-github.com/hencsat46/protos-streaming v0.0.0-20240219175647-e0a1d13e5b6a h1:NZ8F3zRst/S1rm/qQ6MY3ZYUF1sq1l/RlcYl9n3kVp4=
-github.com/hencsat46/protos-streaming v0.0.0-20240219175647-e0a1d13e5b6a/go.mod h1:B2fE+CZmV6QcZqU7hDyRSs3te4tPOwkcNpFz0q1PkXo=
+github.com/hencsat46/protos-streaming v0.0.2 h1:7mcZpSfqnINPB1OZkXrd+PSyfQ6Y7gBCMJ3mbuYkoUo=
+github.com/hencsat46/protos-streaming v0.0.2/go.mod h1:B2fE+CZmV6QcZqU7hDyRSs3te4tPOwkcNpFz0q1PkXo=
 golang.org/x/net v0.18.0 h1:mIYleuAkSbHh0tCv7RvjL3F6ZVbLjq4+R7zbOn3Kokg=
 golang.org/x/net v0.18.0/go.mod h1:/czyP5RqHAH4odGYxBJ1qz0+CE5WZ+2j1YgoEo8F2jQ=
 golang.org/x/sys v0.14.0 h1:Vz7Qs629MkJkGyHxUlRHizWJRG2j8fbQKjELVSNhy7Q=
