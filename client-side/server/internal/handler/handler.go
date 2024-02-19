@@ -15,10 +15,13 @@ type handler struct {
 	store.UnimplementedStoreServer
 }
 
-type UsecaseInterfaces interface{}
+type UsecaseInterfaces interface {
+	Add(string, int32)
+	Get() map[string]int32
+}
 
-func NewHandler() *handler {
-	return &handler{}
+func NewHandler(usecase UsecaseInterfaces) *handler {
+	return &handler{usecase: usecase}
 }
 
 func (h *handler) Run(port string) error {
@@ -48,8 +51,11 @@ func (h *handler) UpdateProducts(stream store.Store_UpdateProductsServer) error 
 		streamOrder, err := stream.Recv()
 		if errors.Is(err, io.EOF) {
 			log.Println("Streaming is over")
+			log.Println(h.usecase.Get())
 			return stream.SendAndClose(&store.UpdateStatus{Status: "Ok"})
 		}
 		log.Println(streamOrder)
+		h.usecase.Add(streamOrder.GetName(), streamOrder.GetCount())
 	}
+
 }
