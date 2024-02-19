@@ -1,6 +1,6 @@
 package repository
 
-import usecase "grpc-streaming/internal/controller"
+import usecase "grpc-streaming/server-side/server/internal/controller"
 
 type repository struct {
 	data map[string]int32

@@ -1,6 +1,6 @@
 package controller
 
-import "grpc-streaming/internal/handler"
+import "grpc-streaming/server-side/server/internal/handler"
 
 type usecase struct {
 	repo RepositoryInterfaces

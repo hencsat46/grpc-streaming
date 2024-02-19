@@ -44,7 +44,7 @@ func (h *handler) register(gRPC *grpc.Server, usecase UsecaseInterfaces) {
 	store.RegisterStoreServer(gRPC, &handler{usecase: usecase})
 }
 
-func (h *handler) GetProducts(response *store.OrderRequest, stream store.Store_GetProductsServer) error {
+func (h *handler) GetProducts(request *store.OrderRequest, stream store.Store_GetProductsServer) error {
 
 	products := h.usecase.Read()
 

@@ -1,9 +1,9 @@
 package main
 
 import (
-	"grpc-streaming/internal/controller"
-	"grpc-streaming/internal/handler"
-	"grpc-streaming/internal/repository"
+	"grpc-streaming/server-side/server/internal/controller"
+	"grpc-streaming/server-side/server/internal/handler"
+	"grpc-streaming/server-side/server/internal/repository"
 	"log"
 )
 
